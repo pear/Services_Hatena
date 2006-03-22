@@ -1,0 +1,76 @@
+================================
+HOW TO TEST PEAR SERVICES_HATENA
+================================
+
+$Id$
+
+
+INTRODUCTION
+============
+
+These are instructions for testing PEAR Services_Hatena on a Windows 
+machine using a Cygwin Bash shell.
+Adjust the paths and commands to match your system.
+This configuration is used because these precise steps are known to work.
+
+NOTE:  You must log on as a user which has permissions to modify the
+contents of your PHP executable's directory.  This is necessary for both
+configuring AND running the test system.
+
+INSTALLATION
+============
+
+Obtain PHP's Test Framework
+---------------------------
+If you don't have PHP's test framework, you need to obtain it.  These
+steps include changing the working directory, downloading run-tests.php
+via CVS and copying the file into place.  Change the revision flag in the
+CVS command as appropriate for your present version of PHP.
+
+ cd c:/progra~1/php
+ cvs -d :pserver:cvsread@cvs.php.net:/repository login   # password is phpfi
+ cvs -d :pserver:cvsread@cvs.php.net:/repository co -r PHP_4_3 \
+     -d test php-src/run-tests.php
+ cp test/run-tests.php .
+ rm -rf test
+
+Obtain Sevices_Hatena and its Test Framework
+--------------------------------------------
+* IF PEAR SERVICES_HATENA IS ALREADY INSTALLED:
+
+  If you have PEAR Services_Hatena installed already, good.  The test suite
+  is in place.  Open up a command/shell prompt and move into
+  the test directory.
+
+   cd <path to pear insall>/tests/Services_Hatena/tests
+
+  We assume you already have the PEAR base package installed.  If
+  you don't, you will need to do so, but the instructions for
+  doing that are beyond the scope of this document.  See
+  http://pear.php.net/manual/en/installation.php for more info.
+
+  Move to the test directory.
+
+   cd pear/Services_Hatena/tests
+
+Copy the Starter Shell Script and Edit the Paths
+------------------------------------------------
+Please, check README.TESTING, run-tests.php.
+[INFO] http://qa.php.net/running-tests.php
+
+
+Results and What To Do With Them
+--------------------------------
+Each test that fails generates a .php (which you can execute), a .exp
+(the expected output), a .out (the test output) and a .diff (a diff -u
+from the .exp and .out files).
+
+If you run the tests, please report or fill the TEST CONFORMANCE table
+in the STATUS document.  Before any commit to CVS be sure to run the
+tests and nothing got broken with the change.
+
+SERVICES_HATENA TESTER MATRIX
+=============================
+
+TESTER         asin autolink bookmark bookmarknum exist foto search similar
+Makoto Tanaka  X    X        -        X           X     -     X      X
