@@ -1,6 +1,0 @@
-Hatena FotoLife Atom API (Makoto Tanaka)
----------------------------------------
-Get the list of fotograph contributed recently.
-
-How to Request
-GET /atom/feed
