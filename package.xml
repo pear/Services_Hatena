@@ -18,7 +18,7 @@ and get information from Hatena Web Site.
   </maintainers>
  <release>
   <version>0.1.0</version>
-  <date>2006-03-21</date>
+  <date>2006-03-23</date>
   <license>php</license>
   <state>alpha</state>
   <notes>We can use Hatena&apos;s Web Servies API with this package.
@@ -35,12 +35,7 @@ Thanks for Mr.Shoma.
   </deps>
   <filelist>
    <dir name="/" baseinstalldir="Services">
-    <dir name="doc">
-     <dir name="examples">
-      <file role="doc" name="Hatena_Services_Example_01.php">
-       <replace type="package-info" from="@package_version@" to="version"/>
-      </file>
-     </dir> <!-- /doc/examples -->
+    <dir name="docs">
      <file role="doc" name="IDEAS">
       <replace type="package-info" from="@package_version@" to="version"/>
      </file>
@@ -53,7 +48,12 @@ Thanks for Mr.Shoma.
      <file role="doc" name="TESTERS">
       <replace type="package-info" from="@package_version@" to="version"/>
      </file>
-    </dir> <!-- /doc -->
+    </dir> <!-- /docs -->
+    <dir name="examples">
+     <file role="doc" name="Hatena_Services_Example_01.php">
+      <replace type="package-info" from="@package_version@" to="version"/>
+     </file>
+    </dir> <!-- /examples -->
     <dir name="Hatena">
      <file role="php" name="Asin.php">
       <replace type="package-info" from="@package_version@" to="version"/>
@@ -109,7 +109,7 @@ Thanks for Mr.Shoma.
  <changelog>
    <release>
     <version>0.1.0</version>
-    <date>2006-03-21</date>
+    <date>2006-03-23</date>
     <license>php</license>
     <state>alpha</state>
     <notes>We can use Hatena&apos;s Web Servies API with this package.
