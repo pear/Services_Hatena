@@ -10,7 +10,7 @@ and get information from Hatena Web Site.
  </description>
  <maintainers>
   <maintainer>
-   <user>Makoto Tanaka</user>
+   <user>makoto</user>
    <name>Makoto Tanaka</name>
    <email>tanaka.makoto@gmail.com</email>
    <role>lead</role>
@@ -18,7 +18,7 @@ and get information from Hatena Web Site.
   </maintainers>
  <release>
   <version>0.1.0</version>
-  <date>2006-03-23</date>
+  <date>2006-03-27</date>
   <license>php</license>
   <state>alpha</state>
   <notes>We can use Hatena&apos;s Web Servies API with this package.
@@ -109,7 +109,7 @@ Thanks for Mr.Shoma.
  <changelog>
    <release>
     <version>0.1.0</version>
-    <date>2006-03-23</date>
+    <date>2006-03-27</date>
     <license>php</license>
     <state>alpha</state>
     <notes>We can use Hatena&apos;s Web Servies API with this package.
