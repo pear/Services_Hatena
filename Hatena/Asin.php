@@ -4,7 +4,7 @@
 /**
  * Asin class
  *
- * PHP version 5
+ * PHP version 4 or newer
  *
  * LICENSE: This source file is subject to version 3.0 of the PHP license
  * that is available through the world-wide-web at the following URI:
