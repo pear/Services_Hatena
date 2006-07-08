@@ -57,7 +57,7 @@ class Services_Hatena_Similar extends Services_Hatena
         $client   = new XML_RPC_Client('/xmlrpc', $this->diary_url, 80);
         $response = $client->send($msg);
 
-        if (!$response->faultCode()) {
+        if ($response && !$response->faultCode()) {
             $r = $response->value();
             $r = $r->scalarval();
             $r_array = $r['wordlist']->me['array'];

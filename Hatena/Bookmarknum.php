@@ -55,7 +55,7 @@ class Services_Hatena_Bookmarknum extends Services_Hatena
         $client   = new XML_RPC_Client('/xmlrpc', $this->bookmark_url, 80);
         $response = $client->send($msg);
 
-        if (!$response->faultCode()) {
+        if ($response && !$response->faultCode()) {
             $r = $response->value();
             $r = $r->scalarval();
             return $r[$url]->me['int'];
