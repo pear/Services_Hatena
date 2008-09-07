@@ -79,6 +79,11 @@ class Services_Hatena
     var $diary_url    = 'd.hatena.ne.jp';
 
     /**
+     * hatena question domain
+     */
+    var $question_url = 'q.hatena.ne.jp';
+
+    /**
      * factory class and return.
      *
      * @param   string $type servics name (search, autolink, asin, bookmarknum, bookmark, similar, foto, exist)
@@ -97,6 +102,7 @@ class Services_Hatena
         case 'Bookmark'    : // class for bookmark API
         case 'Foto'        : // class for foto API
         case 'Exist'       : // class for exist API
+        case 'Question'    : // class for question API
 
             require_once 'Services/Hatena/' . $type . '.php';
             $classname = 'Services_Hatena_' . $type;
