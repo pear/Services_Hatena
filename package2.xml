@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+http://pear.php.net/dtd/tasks-1.0.xsd
+http://pear.php.net/dtd/package-2.0
+http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Hatena</name>
+ <channel>pear.php.net</channel>
+ <summary>WebServices for Hatena</summary>
+ <description>Interface to Hatena&apos;s XML-API.
+feature, follows:
+It provides objects to operate Hatena&apos;s Bookmark or Fotolife service,
+and get information from Hatena Web Site.
+ 
+ </description>
+ <lead>
+  <name>Makoto Tanaka</name>
+  <user>makoto</user>
+  <email>tanaka.makoto@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-09-07</date>
+ <time>10:34:28</time>
+ <version>
+  <release>0.1.2</release>
+  <api>0.1.2</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license">php</license>
+ <notes>We can use Hatena&apos;s Web Servies API with this package.
+i like Hatena. i want to say &quot;thank you&quot; to developer&apos;s member in Hatena.
+Because there was help of many people, I was able to make a package.
+Thanks for Mr.Shoma.
+
+0.1.2) converted to package2.xml and added new class &apos;Services_Hatena_Question&apos;
+  
+ </notes>
+ <contents>
+  <dir name="/">
+   <dir name="docs">
+    <file baseinstalldir="Services" name="IDEAS" role="doc">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="MAINTAINERS" role="doc">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="STATUS" role="doc">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="TESTERS" role="doc">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+   </dir> <!-- /docs -->
+   <dir name="examples">
+    <file baseinstalldir="Services" name="Hatena_Services_Example_01.php" role="doc">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+   </dir> <!-- /examples -->
+   <dir name="Hatena">
+    <file baseinstalldir="Services" name="Asin.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Autolink.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Bookmark.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Bookmarknum.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Exist.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Foto.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Question.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Search.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Similar.php" role="php">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+   </dir> <!-- /Hatena -->
+   <dir name="tests">
+    <file baseinstalldir="Services" name="Asin.phpt" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Autolink.phpt" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Bookmarknum.phpt" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Exist.phpt" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Search.phpt" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+    <file baseinstalldir="Services" name="Similar.phpt" role="test">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+   </dir> <!-- /tests -->
+   <file baseinstalldir="Services" name="Hatena.php" role="php">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0b1</min>
+   </pearinstaller>
+   <package>
+    <name>PEAR</name>
+    <channel>pear.php.net</channel>
+    <min>1.3.0</min>
+   </package>
+   <package>
+    <name>Services_OpenSearch</name>
+    <channel>pear.php.net</channel>
+    <min>0.0.1</min>
+   </package>
+   <package>
+    <name>XML_RPC</name>
+    <channel>pear.php.net</channel>
+    <min>1.1.0</min>
+   </package>
+   <package>
+    <name>HTTP_Request</name>
+    <channel>pear.php.net</channel>
+    <min>1.3.0</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.2</release>
+    <api>0.1.2</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-09-07</date>
+   <license uri="http://www.php.net/license">php</license>
+   <notes>We can use Hatena&apos;s Web Servies API with this package.
+i like Hatena. i want to say &quot;thank you&quot; to developer&apos;s member in Hatena.
+Because there was help of many people, I was able to make a package.
+Thanks for Mr.Shoma.
+
+0.1.2) converted to package2.xml and added new class &apos;Services_Hatena_Question&apos;
+    
+   </notes>
+  </release>
+ </changelog>
+</package>
