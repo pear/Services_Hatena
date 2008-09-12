@@ -27,7 +27,7 @@ require_once 'HTTP/Request.php';
  * Services_Hatena
  *
  * This class serves method to store or get result.
- * This class is for creating object using Hatena's 
+ * This class is for creating object using Hatena's
  * Web Services API (search, autolink, bookmark, bookmarknum, foto, asin, similar,exist).
  *
  * @category   Services
@@ -150,7 +150,7 @@ class Services_Hatena
      */
     function setWSSEAuth($user, $pass, $sha1 = false)
     {
-         $nowtime = date('Y-m-d\TH:i:s\Z');
+         $nowtime = gmdate('Y-m-d\TH:i:s\Z');
          $nonce   = pack('H*', sha1(md5(time())));
          $digest  = base64_encode(pack('H*', sha1($nonce.$nowtime.$pass)));
          $wsse = 'UsernameToken Username="'.$user.'", PasswordDigest="'.$digest.'", Created="'.$nowtime.'", Nonce="'.base64_encode($nonce).'"';
