@@ -16,4 +16,4 @@ print($result);
 --GET--
 --POST--
 --EXPECT--
-This <a class="keyword" target="_blank" href="http://d.hatena.ne.jp/keyword/is">is</a> a <a class="keyword" target="_blank" href="http://d.hatena.ne.jp/keyword/test">test</a>.
+This is a <a class="keyword" target="_blank" href="http://d.hatena.ne.jp/keyword/test">test</a>.

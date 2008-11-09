@@ -56,12 +56,10 @@ class Services_Hatena_Asin extends Services_Hatena
 
         if ($response && !$response->faultCode()) {
             $r = $response->value();
-            $r = $r->scalarval();
-            return $r[$asin]->me['int'];
+            return $r->me['struct'][$asin]->me['int'];
         } else {
             return PEAR::raiseError('missing the result.');
         }
     }
 }
 ?>
-

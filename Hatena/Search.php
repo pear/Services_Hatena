@@ -151,4 +151,3 @@ class Services_Hatena_Search extends Services_Hatena
     }
 }
 ?>
-

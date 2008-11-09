@@ -159,4 +159,3 @@ class Services_Hatena_Foto extends Services_Hatena
     }
 }
 ?>
-

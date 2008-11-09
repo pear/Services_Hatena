@@ -10,11 +10,11 @@ $hatena = Services_Hatena::factory('Bookmarknum');
 
 $result = $hatena->execute('http://www.yahoo.co.jp/');
 
-// 2006.02.27 Result is 586. but it may change.
+// 2008.11.09 Result is 3850. but it may change.
 print($result);
 
 ?>
 --GET--
 --POST--
---EXPECT--
-586
+--EXPECTREGEX--
+\d+

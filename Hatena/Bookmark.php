@@ -161,4 +161,3 @@ class Services_Hatena_Bookmark extends Services_Hatena
     }
 }
 ?>
-

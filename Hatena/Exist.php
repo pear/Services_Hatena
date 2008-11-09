@@ -85,17 +85,16 @@ class Services_Hatena_Exist extends Services_Hatena
          * if the information is nothing, i will return null.
          */
         $match_result = array();
-        if ($matches[1][0] && $matches[2][0]) { 
+        if (isset($matches[1][0]) && isset($matches[2][0])) { 
             $match_result[$matches[1][0]] = $matches[2][0];
         }
-        if ($matches[1][1] && $matches[2][1]) {
+        if (isset($matches[1][1]) && isset($matches[2][1])) {
             $match_result[$matches[1][1]] = $matches[2][1];
         }
-        if ($matches[1][2] && $matches[2][2]) {
+        if (isset($matches[1][2]) && isset($matches[2][2])) {
             $match_result[$matches[1][2]] = $matches[2][2];
         }
         return $match_result;
     }
 }
 ?>
-

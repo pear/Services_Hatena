@@ -59,8 +59,7 @@ class Services_Hatena_Similar extends Services_Hatena
 
         if ($response && !$response->faultCode()) {
             $r = $response->value();
-            $r = $r->scalarval();
-            $r_array = $r['wordlist']->me['array'];
+            $r_array = $r->me['struct']['wordlist']->me['array'];
 
             $match_result = array();
             foreach ( $r_array as $rs ) {
@@ -100,4 +99,3 @@ class Services_Hatena_Similar extends Services_Hatena
     }
 }
 ?>
-

@@ -161,4 +161,3 @@ class Services_Hatena_Autolink extends Services_Hatena
     }
 }
 ?>
-
