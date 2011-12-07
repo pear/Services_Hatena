@@ -3,7 +3,6 @@ AUTOLINK
 --SKIPIF--
 --FILE--
 <?php
-error_reporting(E_ALL);
 require_once 'Services/Hatena.php';
 
 $hatena = Services_Hatena::factory('Autolink');
