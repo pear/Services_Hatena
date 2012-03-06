@@ -29,6 +29,12 @@
             <arg value="http://svn.php.net/repository/pear/packages/XML_RPC/trunk/" />
             <arg value="lib/XML_RPC" />
         </exec>
+        <exec executable="svn">
+            <arg value="export" />
+            <arg value="http://svn.php.net/repository/pear/packages/Services_OpenSearch/trunk/" />
+            <!-- Fix poor dir structure -->
+            <arg value="lib/Services/OpenSearch/Services" />
+        </exec>
 
 	</target>
 
