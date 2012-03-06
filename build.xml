@@ -33,7 +33,7 @@
             <arg value="export" />
             <arg value="http://svn.php.net/repository/pear/packages/Services_OpenSearch/trunk/" />
             <!-- Fix poor dir structure -->
-            <arg value="lib/Services/OpenSearch/Services" />
+            <arg value="lib/Services_OpenSearch/Services" />
         </exec>
 
 	</target>
