@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Hatena</name>
+ <channel>pear.php.net</channel>
+ <summary>WebServices for Hatena</summary>
+ <description>Interface to Hatena&apos;s XML-API.
+feature, follows:
+It provides objects to operate Hatena&apos;s Bookmark or Fotolife service,
+and get information from Hatena Web Site.</description>
+ <lead>
+  <name>Makoto Tanaka</name>
+  <user>makoto</user>
+  <email>tanaka.makoto@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2012-03-06</date>
+ <time>23:29:29</time>
+ <version>
+  <release>0.1.4</release>
+  <api>0.1.4</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license">php</license>
+ <notes>
+We can use Hatena&apos;s Web Servies API with this package.
+i like Hatena. i want to say &quot;thank you&quot; to developer&apos;s member in Hatena.
+Because there was help of many people, I was able to make a package.
+Thanks for Mr.Shoma.
+
+0.1.4) bug fix on Asin,Bookmarknum,Exist and Similar.php. Thank you, daniel.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="Services" md5sum="936366dc54a0a6b1e8a3989a3528ca3a" name="docs/IDEAS" role="doc">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="Services" md5sum="2ecd2b01ada05ff2541ce4f3ea03661c" name="docs/MAINTAINERS" role="doc">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="Services" md5sum="f18fa49869e57edaf91fd8300ab162dd" name="docs/STATUS" role="doc">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="Services" md5sum="6ea3c1ce933a83ad3f024a7ce484a58c" name="docs/TESTERS" role="doc">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="Services" md5sum="18b3df00ebd3eddf09f2ee8698f00e94" name="examples/Hatena_Services_Example_01.php" role="doc">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="/" md5sum="78dd3eacca84c60be2079196ffb9abf6" name="Services/Hatena.php" role="php" />
+   <file baseinstalldir="/" md5sum="db3ae4573af4710eaa9ed2fa64f339fe" name="Services/Hatena/Asin.php" role="php" />
+   <file baseinstalldir="/" md5sum="52f104eb25f3abb272266bebd8bd86a8" name="Services/Hatena/Autolink.php" role="php" />
+   <file baseinstalldir="/" md5sum="fd4001ce2429548683edd8b55a7f3c01" name="Services/Hatena/Bookmark.php" role="php" />
+   <file baseinstalldir="/" md5sum="1763cdf4eb448a4a31c9217e5bf71b39" name="Services/Hatena/Bookmarknum.php" role="php" />
+   <file baseinstalldir="/" md5sum="2498a3f8a157113bf73f4b3f65829d42" name="Services/Hatena/Exist.php" role="php" />
+   <file baseinstalldir="/" md5sum="7041fec1e13337e1a3bf373a4274f858" name="Services/Hatena/Foto.php" role="php" />
+   <file baseinstalldir="/" md5sum="890c5f66207f9423903e300740addd01" name="Services/Hatena/Question.php" role="php" />
+   <file baseinstalldir="/" md5sum="5616a151df2d68b9cfceced1528138b6" name="Services/Hatena/Search.php" role="php" />
+   <file baseinstalldir="/" md5sum="ecbc4e3e17b0937131ef90465810fb0b" name="Services/Hatena/Similar.php" role="php" />
+   <file baseinstalldir="Services" md5sum="4f69e59242a3faaab46a3d4b333e87a8" name="tests/Asin.phpt" role="test">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="Services" md5sum="d22a17062e83126fa1c455e36c9b19bc" name="tests/Autolink.phpt" role="test">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="Services" md5sum="8e8ce606d526efb1fce589e007b752bf" name="tests/Bookmarknum.phpt" role="test">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="Services" md5sum="d23fe60fdc040fa33868473ba8bb8538" name="tests/Exist.phpt" role="test">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="Services" md5sum="59b349e6ecad1e426f1832854d2b3a4d" name="tests/Search.phpt" role="test">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="Services" md5sum="d58fe3ebfa090aa6f890c0ab7b42674b" name="tests/Similar.phpt" role="test">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="/" md5sum="00a919207d04b5c475b8d93e8a44ade9" name="README" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0b1</min>
+   </pearinstaller>
+   <package>
+    <name>PEAR</name>
+    <channel>pear.php.net</channel>
+    <min>1.3.0</min>
+   </package>
+   <package>
+    <name>Services_OpenSearch</name>
+    <channel>pear.php.net</channel>
+    <min>0.0.1</min>
+   </package>
+   <package>
+    <name>XML_RPC</name>
+    <channel>pear.php.net</channel>
+    <min>1.1.0</min>
+   </package>
+   <package>
+    <name>HTTP_Request</name>
+    <channel>pear.php.net</channel>
+    <min>1.3.0</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.4</release>
+    <api>0.1.4</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2012-03-06</date>
+   <license uri="http://www.php.net/license">php</license>
+   <notes>
+We can use Hatena&apos;s Web Servies API with this package.
+i like Hatena. i want to say &quot;thank you&quot; to developer&apos;s member in Hatena.
+Because there was help of many people, I was able to make a package.
+Thanks for Mr.Shoma.
+
+0.1.4) bug fix on Asin,Bookmarknum,Exist and Similar.php. Thank you, daniel.
+   </notes>
+  </release>
+ </changelog>
+</package>
