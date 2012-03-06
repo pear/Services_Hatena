@@ -35,6 +35,11 @@
             <!-- Fix poor dir structure -->
             <arg value="lib/Services_OpenSearch/Services" />
         </exec>
+	<exec executable="git">
+            <arg value="clone" />
+            <arg value="git://github.com/pear/XML_RSS.git" />
+            <arg value="lib/XML_RSS" />
+        </exec>
 
 	</target>
 

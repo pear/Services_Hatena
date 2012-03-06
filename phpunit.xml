@@ -20,6 +20,7 @@
 	<php>
 		<includePath>lib/XML_RPC</includePath>
                 <includePath>lib/Services_OpenSearch</includePath>
+		<includePath>lib/XML_RSS</includePath>
 		<!-- E_ALL -->
 		<ini name="error_reporting" value="30719" />
 	</php>
