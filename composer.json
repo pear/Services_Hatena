@@ -1,0 +1,31 @@
+{
+    "authors": [
+        {
+            "email": "tanaka.makoto@gmail.com",
+            "name": "Makoto Tanaka",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Services_Hatena": "./"
+        }
+    },
+    "description": "More info available on: http://pear.php.net/package/Services_Hatena",
+    "include-path": [
+        "./"
+    ],
+    "license": "php",
+    "name": "pear/services_hatena",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Services_Hatena",
+        "source": "https://github.com/pear/Services_Hatena"
+    },
+    "type": "library",
+    "require": {
+        "pear/pear_exception": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
